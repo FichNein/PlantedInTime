@@ -1,2 +1,0 @@
-p: Pitcher Plant
-l: Nepenthes truncata
