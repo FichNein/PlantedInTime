@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/home/home.css')}}">
+
+<div id="topbar">      
+    <h1 id="title">
+        <a href="{{url_for('home')}}">PLANTED IN TIME</a>
+        <div id="titleUnder"></div>
+    </h1>
+</div>
+{% if not specie %}
+    <h1 id="header">My Plants!</h1>
+{% else %}
+    <h1 id="header">My {{specie}}</h1>
+{% endif %}
+</h1>
+<div id="headerBar"></div>
+{% block content %}{% endblock content %}

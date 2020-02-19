@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/plant/plant.css')}}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div id="pickBox">
+    <img data-enlargable id="plantPhoto" src="{{ url_for('static', filename=finalPhotoPath)}}">
+    <div id="plantPhotoUnder"></div>
+</div>
+
+<div id="playBox">
+    <button id="play", onclick="play()">▶</button>
+    <div class="slidecontainer", id="progressBar">
+        <input type="range" min="1" max="{{count}}" value="1" class="slider" id="progressMarker">
+    </div>
+    <div id="curPhoto"></div>
+</div>
+
+<div id="buttons">
+    <button class="button", id="first", onclick="first()"><<</button>
+    <button class="button", id="prev", onclick="prev()"><</button>
+    <button class="button", id="next", onclick="next()">></button>
+    <button class="button", id="last", onclick="last()">>></button>
+</div>
+
+<div id="startEndBox">
+    <h3 id="start">Start</h3>
+    <h3 id="end">End</h3>
+    <h3 id="startDate">{{start}}</h3>
+    <h3 id="endDate">{{end}}</h3>
+</div>
+
+<script src="../static/plant/plant.js"></script> 
+
+{% endblock content %}

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
+
+
+#plantPhoto {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#playBox {
+    display: inline-block;
+    width: 84%;
+    height: 20px;
+    margin-left: 6%;
+    padding-top: 6px;
+    border-radius: 2px;
+    background-color: #cdad87;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#play {
+    width: max-content;
+    float: left;
+    font-size: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.slider:focus {
+    outline: none;
+}
+
+.slidecontainer {
+    position: relative;
+    float: left;
+    width: calc(100% - 85px);
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+
+    position: relative;
+    float: left;
+    right: 3px;
+    top: 3px;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: white; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 2px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background:  #737373; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+  
+.slider::-moz-range-thumb {
+    width: 2px; /* Set a specific slider handle width */
+    height: 12px; /* Slider handle height */
+    background:  #737373; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+#curPhoto {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: max-content;
+    float: right;
+    font-size: 14px;
+    bottom: 2px;
+    color: #000;
+}
+
+#buttons {
+    display: grid;
+    width: 94%;
+    margin-left: 3%;
+    grid-template-areas: "first prev next last";
+}
+
+#first {
+    grid-area: "first";
+}
+
+#prev {
+    grid-area: "prev";
+}
+
+#next {
+    grid-area: "next";
+}
+
+#last {
+    grid-area: "last";
+}
+
+#startEndBox {
+    position: relative;
+    display: grid;
+    width: max-content;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    grid-template-rows: 30px 80px;
+    grid-template-columns: 150px 150px;
+    grid-template-areas: "start end"
+                         "startDate endDate";
+    margin-bottom: 0px;
+}
+
+#start {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 23px;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15em;
+    grid-area: "start";
+    margin-bottom: 0px;
+}
+
+#end {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 23px;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15em;
+    grid-area: "end";
+}
+
+#startDate {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 28px;
+    grid-area: "startDate";
+    margin-bottom: 0px;
+}
+
+#endDate {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 28px;
+    grid-area: "endDate";
+    margin-bottom: 0px;
+}

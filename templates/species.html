@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/speciesCode/species.css')}}">
+
+<div id="pickBox">
+    <h3 id="pick">Pick a start!</h3>
+    <div id="pickUnder"></div>
+</div>
+{% for i in range(len) %}
+    <li id="startList">
+        <a href="{{url_for('plantResponse', species=plants[i].parent.name, start=plants[i].start)}}">
+            <h2>- {{plants[i].start}}</h2>
+        </a>
+    </li>
+{% endfor %}
+{% endblock content %}

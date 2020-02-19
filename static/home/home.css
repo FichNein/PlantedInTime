@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
+
+h2 {
+    color: black;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#topbar {
+    background-color: #cdad87;
+    border-bottom: 2px solid white;
+    height: 7em;
+    padding: 0em;
+    margin: 0em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+#title {
+    position: absolute;
+    width: max-content;
+    font-size: 1.5em;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#titleUnder {
+    background-color: #eee;
+    width: auto;
+    height: 0.15em;
+}
+
+#header {
+    margin-left: 10px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #737373;
+    overflow: hidden;
+}
+
+#header:after {
+    content:"";
+    display: inline-block;
+    height: 6px;
+    vertical-align: middle;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 6px solid #cdad87;
+}
+
+.landingBox1 {
+    width: 82%;
+    height: 220px;
+    position: relative;
+    left: 12px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.landingPhotoBack1 {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    top: 0px;
+    left: 0px;
+    background-color: #cdad87;
+}
+
+.landingPhotos1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+}
+
+.landingPhotos1:hover {
+    filter: brightness(125%);
+}
+
+.landingPhotos2:hover {
+    filter: brightness(125%);
+}
+
+.landingBox2 {
+    width: 82%;
+    height: 220px;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    margin-bottom: 10px;
+}
+
+.landingPhotoBack2 {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    top: 0px;
+    left: 0px;
+    background-color: #cdad87;
+    left: 100%;
+    transform: translateX(-100%);
+}
+
+.landingPhotos2 {
+    position: absolute;
+    top: 10px;
+    width: 300px;
+    left: calc(100% - 10px);
+    transform: translateX(-100%);
+}
+
+@media only screen and (min-width: 600px) {
+    
+  }

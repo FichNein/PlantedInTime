@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap");
+
+#pickBox {
+    width: auto;
+    height: 40px;
+}
+
+#pick {
+    font-family: 'Nanum Pen Script', cursive;
+    position: relative;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 23px;
+}
+    
+#pickUnder {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #cdad87;
+    width: 100px;
+    height: 0.2em;
+    top: -20px;
+}
+
+#startList {
+    margin: 0;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    width: max-content;
+}

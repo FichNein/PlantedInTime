@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<body>
+    
+{% for i in range(len) %}
+    {%if i % 2%}
+        <div class="landingBox2">
+            <a href="{{url_for('speciesRespone', species=species[i].name)}}">
+                <div class="landingPhotoBack2"></div>
+                <img class="landingPhotos2" src="{{url_for('static', filename=(species[i].plants[0].staticPath + '/photos/1.jpg'))}}" alt="">
+            </a>
+        </div>
+    {%else%}
+        <div class="landingBox1">
+            <a href="{{url_for('speciesRespone', species=species[i].name)}}">
+                <div class="landingPhotoBack1"></div>
+                <img class="landingPhotos1" src="{{url_for('static', filename=(species[i].plants[0].staticPath + '/photos/1.jpg'))}}" alt="">
+            </a>
+        </div>
+    {%endif%}
+{% endfor %}
+</div>
+
+</body>
+
+
+
+{% endblock content %}
